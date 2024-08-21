@@ -62,48 +62,30 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
                 
         [
-            InlineKeyboardButton(text="◁ ʀᴇꜱᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="☊ ᴘᴀᴜꜱᴇ", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="▷ ꜱᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
-    ]
-     [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(text="▢ ꜱᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ",url=f"https://t.me/Queen_update",),
-        ],
-         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
-        ]
-
-    return buttons
-
-
-def stream_markup(_, videoid, chat_id):
-    buttons = [
-        [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
-         ],
+        ],
         [
             InlineKeyboardButton(
-                text="𝖮𝗐𝗇𝖾𝗋🥀", url="https://t.me/ll_ISTKHAR_ll",
-            ),
-            InlineKeyboardButton(
-                text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍🥀", url="https://t.me/MUNNA_INDO_IG_STORE",
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
             )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
-    ]
+      [
+            InlineKeyboardButton(
+                text="𝖮ᴡɴᴇʀ 🥀", url="https://t.me/ll_ISTKHAR_ll",
+            ),
+            InlineKeyboardButton(
+                text="𝖲ᴜᴘᴘᴏʀᴛ 🥀", url="https://t.me/+4cgcV3Q_2CI2YjNl",
+            )
+        ],
+         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        ]
 
     return buttons
-
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
