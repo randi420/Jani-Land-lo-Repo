@@ -61,13 +61,13 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         bar = "—————————♡"
 
     buttons = [
-        [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
+[
+            InlineKeyboardButton(text="🔊", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="🔇", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="🔁", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="⏭️", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="🛑", callback_data=f"ADMIN Stop|{chat_id}"),
+]
         [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
@@ -76,10 +76,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
       [
             InlineKeyboardButton(
-                text="𝖮ᴡɴᴇʀ 🥀", url="https://t.me/uttam470",
+                text="𝐎𝐰𝐧𝐞𝐫🥀", url="https://t.me/lll_ISTKHAR_ll",
             ),
             InlineKeyboardButton(
-                text="𝖲ᴜᴘᴘᴏʀᴛ 🥀", url="https://t.me/+j6FO8pK8IIkxZDU1",
+                text="𝐂𝐡𝐚𝐭🥀", url="https://t.me/+4cgcV3Q_2CI2YjNl",
             )
         ],
          [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -91,18 +91,19 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
 def stream_markup(_, videoid, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
-         ],
+        [
+            InlineKeyboardButton(text="🔊", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="🔇", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="🔁", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="⏭️", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="🛑", callback_data=f"ADMIN Stop|{chat_id}"),
+        ]
         [
             InlineKeyboardButton(
-                text="𝖮𝗐𝗇𝖾𝗋🥀", url="https://t.me/uttam470",
+                text="𝐎𝐰𝐧𝐞𝐫🥀", url="https://t.me/lll_ISTKHAR_ll",
             ),
             InlineKeyboardButton(
-                text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍🥀", url="https://t.me/+j6FO8pK8IIkxZDU1",
+                text="𝐂𝐡𝐚𝐭🥀", url="https://t.me/+4cgcV3Q_2CI2YjNl",
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
