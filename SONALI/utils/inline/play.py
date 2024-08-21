@@ -40,42 +40,41 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "✦𝐏υяꪜɪ✦—————————"
+        bar = "✧▰▱▱▱▱▱▱▱▰"
     elif 10 < umm < 20:
-        bar = "—✦𝐏υяꪜɪ✦————————"
+        bar = "▰✧▱▱▱▱▱▱▱▰"
     elif 20 <= umm < 30:
-        bar = "—✦𝐏υяꪜɪ✦———————"
+        bar = "▰▱✧▱▱▱▱▱▱▰"
     elif 30 <= umm < 40:
-        bar = "——✦𝐏υяꪜɪ✦——————"
+        bar = "▰▱▱✧▱▱▱▱▱▰"
     elif 40 <= umm < 50:
-        bar = "———✦𝐏υяꪜɪ✦—————"
+        bar = "▰▱▱▱✧▱▱▱▱▰"
     elif 50 <= umm < 60:
-        bar = "————✦𝐏υяꪜɪ✦————"
+        bar = "▰▱▱▱▱✧▱▱▱▰"
     elif 60 <= umm < 70:
-        bar = "—————✦𝐏υяꪜɪ✦———"
+        bar = "▰▱▱▱▱▱✧▱▱▰"
     elif 70 <= umm < 80:
-        bar = "——————✦𝐏υяꪜɪ✦——"
+        bar = "▰▱▱▱▱▱▱✧▱▰"
     elif 80 <= umm < 95:
-        bar = "———————✦𝐏υяꪜɪ✦—"
+        bar = "▰▱▱▱▱▱▱▱✧▰"
     else:
-        bar = "————————✦𝐏υяꪜɪ✦"
+        bar = "▰▱▱▱▱▱▱▱▰✧"
     buttons = [
-        
-                    [
+                [
+            InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
             InlineKeyboardButton(text="◁ ʀᴇꜱᴜᴍᴇ", callba kock_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="☊ ᴘᴀᴜꜱᴇ", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="▷ ꜱᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
         ],
         [
             InlineKeyboardButton(text="▢ ꜱᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
-            InlineKeyboardButton(text="𝐎𝐰𝐧𝐞𝐫",url=f"https://t.me/ll_ISTKHAR_ll",),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ",url=f"https://t.me/Queen_update",),
         ],
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-           
          [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
         ]
 
